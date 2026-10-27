@@ -1,17 +1,24 @@
 {
   "expo": {
-    "name": "erguido",
+    "name": "Erguido",
     "slug": "erguido",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F0E8",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Erguido enciende la cámara frontal solo durante la pausa para dibujar la guía sobre tu imagen. El video no se guarda."
+      }
     },
     "android": {
+      "package": "com.erguido.app",
+      "versionCode": 1,
+      "permissions": ["android.permission.CAMERA"],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0F6E58",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +27,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Erguido enciende la cámara frontal solo durante la pausa para dibujar la guía sobre tu imagen. El video no se guarda.",
+          "recordAudioAndroid": false
+        }
+      ]
+    ]
   }
 }

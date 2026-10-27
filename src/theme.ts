@@ -1,0 +1,32 @@
+export const theme = {
+  bg: "#F4F0E8",
+  desk: "#E7E2D8",
+  ink: "#1C2824",
+  body: "#333A37",
+  muted: "#7C8281",
+  green: "#0F6E58",
+  greenSoft: "#E5F1EC",
+  line: "#E4DFD6",
+  white: "#FFFFFF",
+  painBg: "#F8E8E4",
+  pain: "#8E4038",
+  painInline: "#A56A62",
+  camera: "#1A2420",
+  headCard: "#F8E6D6",
+  head: "#E08A45",
+  shoulderCard: "#DCEAF0",
+  shoulder: "#1E7F99",
+  shoulderLine: "#5EC8DC",
+  joint: "#00C853",
+  bone: "#FFFFFF",
+  ghost: "#D7EBE3",
+  inactiveCard: "#EFEBE3",
+  secondaryBorder: "#D7DFD6",
+};
+
+export const font = {
+  serif: "Lora_600SemiBold",
+  sans: "Inter_400Regular",
+  sansMedium: "Inter_500Medium",
+  sansSemi: "Inter_600SemiBold",
+};
